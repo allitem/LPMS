@@ -1,8 +1,8 @@
 {
   "info": {
     "name": "LPMS API",
-    "_postman_id": "b1c0d8a4-1234-5678-9101-abcdef123456",
-    "description": "Postman Collection สำหรับ LPMS - ใช้ API Key authentication",
+    "_postman_id": "b1c0d8a4-5678-1234-9101-abcdef123456",
+    "description": "Postman Collection สำหรับ LPMS - รองรับ API Key authentication",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -10,9 +10,7 @@
       "name": "Register User",
       "request": {
         "method": "POST",
-        "header": [
-          { "key": "Content-Type", "value": "application/json" }
-        ],
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"yourpassword\"\n}"
@@ -36,9 +34,7 @@
       "name": "Get Projects",
       "request": {
         "method": "GET",
-        "header": [
-          { "key": "x-api-key", "value": "{{API_KEY}}" }
-        ],
+        "header": [{ "key": "x-api-key", "value": "{{API_KEY}}" }],
         "url": { "raw": "http://localhost:5000/api/projects", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api","projects"] }
       }
     },
@@ -50,10 +46,7 @@
           { "key": "x-api-key", "value": "{{API_KEY}}" },
           { "key": "Content-Type", "value": "application/json" }
         ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"name\": \"New Project\"\n}"
-        },
+        "body": { "mode": "raw", "raw": "{\n  \"name\": \"New Project\"\n}" },
         "url": { "raw": "http://localhost:5000/api/projects", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api","projects"] }
       }
     },
@@ -73,7 +66,5 @@
       }
     }
   ],
-  "variable": [
-    { "key": "API_KEY", "value": "" }
-  ]
-    }
+  "variable": [{ "key": "API_KEY", "value": "" }]
+  }
