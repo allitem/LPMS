@@ -82,5 +82,5 @@ sudo certbot --nginx -d yourdomain.com --non-interactive --agree-tos -m your-ema
 # 7. Done
 # ===============================
 echo "LPMS Deployment Completed!"
-echo "Frontend: http://yourdomain.com"
-echo "Backend API: http://yourdomain.com/api/"
+echo "Frontend: http://LPMs.com"
+echo "Backend API: http://LPMS.com/api/"
